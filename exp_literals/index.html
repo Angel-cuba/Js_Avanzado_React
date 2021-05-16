@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Template Literals -expressions</title>
+</head>
+<body>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore aspernatur sunt quaerat consequatur, optio corrupti unde illo. Debitis cumque voluptatem omnis ab veniam recusandae placeat, dicta asperiores perferendis earum pariatur?</p>
+
+     <script>
+          const nombre = 'Angel'
+          console.log(`Mi nombre es ${['a', 'b'].map(letra => `${letra}-styled`)}`)
+          console.log(nombre=="Angel1"? true : false)
+          console.log(`Mi nombre es ${nombre}`)
+
+
+          function taggedTemplate(string) {
+               console.log('string',string)
+          }
+
+          taggedTemplate`hola ${string= 'mundo'}`
+     </script>
+</body>
+</html>

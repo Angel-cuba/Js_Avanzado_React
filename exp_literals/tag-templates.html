@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tag Templates</title>
+</head>
+<body>
+     <!-- <p>Lorem ipsum dolor sit amet, consectet</p> -->
+
+
+     <script>
+               function taggedTemplate(strings, ...values) {
+                    // console.log(strings, values);
+                    strings.forEach((string, index) => {
+                              console.log(values[index])
+                              // console.log(string)
+                    })
+               }
+          taggedTemplate`Lorem ${'ipsum'} dolor sit amet, ${'consectet'}`
+           document.body.innerHTML = taggedTemplate
+
+     </script>
+</body>
+</html>
